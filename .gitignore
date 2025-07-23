@@ -98,8 +98,105 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
-# Docker klasörü ignore edilir
-docker/
+# Environment variables and sensitive files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+docker/.env
+docker/.env.local
+docker/.env.development
+docker/.env.test
+docker/.env.production
+
+# Docker compose override files
+docker-compose.override.yml
+docker-compose.override.yaml
+docker/docker-compose.override.yml
+docker/docker-compose.override.yaml
+
+# Database files and backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+backups/
+data/
+pgdata/
+postgres-data/
+
+# Application secrets and configs
+appsettings.Local.json
+appsettings.Secrets.json
+secrets.json
+user-secrets/
+
+# SSL Certificates and keys
+*.pfx
+*.p12
+*.cer
+*.crt
+*.key
+*.pem
+certs/
+certificates/
+
+# IDE and Editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/.ropeproject
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+logs/
+temp/
+tmp/
+
+# Redis dump files
+dump.rdb
+
+# Entity Framework migrations backup
+migrations-backup/
+
+# Test results and coverage
+TestResults/
+coverage/
+*.lcov
+coverage.json
+coverage.xml
+*.cobertura.xml
+
+# NuGet packages (if not using package restore)
+packages/
+!packages/repositories.config
+!packages/build/
+
+# JWT keys and secrets
+jwt-*.key
+*.jwt
+jwks.json
+
+# Docker volumes data
+docker-data/
+docker-volumes/
 
 # Chutzpah Test files
 _Chutzpah*

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using SkillForge.Identity.Models;
 using SkillForge.Identity.Services;
+using SkillForge.Application.Common.Interfaces;
 using SkillForge.Infrastructure.Persistence;
 
 namespace SkillForge.Identity
@@ -36,6 +37,7 @@ namespace SkillForge.Identity
 
             // Register AuthService with AppDbContext
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IUserManagementService, UserManagementService>();
 
             return services;
         }
