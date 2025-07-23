@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
     <PackageReference Include="Mapster" Version="7.4.0" />
     <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="MediatR" Version="13.0.0" />
@@ -15,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SkillForge.Domain\SkillForge.Domain.csproj" />
+    <ProjectReference Include="..\SkillForge.Infrastructure\SkillForge.Infrastructure.csproj" />
     <ProjectReference Include="..\SkillForge.Shared\SkillForge.Shared.csproj" />
   </ItemGroup>
 
