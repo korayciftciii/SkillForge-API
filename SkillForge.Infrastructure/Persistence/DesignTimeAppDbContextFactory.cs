@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using SkillForge.Shared.Utilities;
 
 namespace SkillForge.Infrastructure.Persistence
 {
@@ -21,7 +22,10 @@ namespace SkillForge.Infrastructure.Persistence
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
             optionsBuilder.UseNpgsql(configuration.GetConnectionString("ProjectDb"));
 
-            return new AppDbContext(optionsBuilder.Options);
+            // For design-time, provide a default DateTimeProvider and null for CurrentUserService
+            var dateTimeProvider = new DateTimeProvider();
+
+            return new AppDbContext(optionsBuilder.Options, dateTimeProvider, null);
         }
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SkillForge.Application.Features.Projects.Commands.Create;
 using SkillForge.Infrastructure.Persistence;
+using SkillForge.Shared.Utilities;
 
 namespace SkillForge.Tests.Application.Projects
 {
@@ -16,7 +17,8 @@ namespace SkillForge.Tests.Application.Projects
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
 
-            _context = new AppDbContext(options);
+            var dateTimeProvider = new DateTimeProvider();
+            _context = new AppDbContext(options, dateTimeProvider, null);
             _handler = new CreateProjectCommandHandler(_context);
         }
 

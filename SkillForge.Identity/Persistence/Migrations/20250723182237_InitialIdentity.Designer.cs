@@ -12,8 +12,8 @@ using SkillForge.Identity;
 namespace SkillForge.Identity.Persistence.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20250721171710_InitialIdentityMigration")]
-    partial class InitialIdentityMigration
+    [Migration("20250723182237_InitialIdentity")]
+    partial class InitialIdentity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SkillForge.Identity
 {
-  public  class IdentityContext : IdentityDbContext<ApplicationUser,ApplicationRole,string>
+    public class IdentityContext : IdentityDbContext<ApplicationUser,ApplicationRole,string>
     {
         public IdentityContext(DbContextOptions<IdentityContext> options) : base(options) { }
     }
