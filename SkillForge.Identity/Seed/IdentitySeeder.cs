@@ -19,7 +19,7 @@ namespace SkillForge.Identity.Seed
             try
             {
                 var adminEmail = "admin@gmail.com";
-                var adminPassword = "#Rtz45Sky1"; // geçici şifre, sonra environment'a alınabilir (10+ characters)
+                var adminPassword = "Admin12345."; // geçici şifre, sonra environment'a alınabilir (10+ characters)
 
                 logger?.LogInformation("Starting admin user seeding for email: {Email}", adminEmail);
 

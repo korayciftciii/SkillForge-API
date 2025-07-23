@@ -405,7 +405,7 @@ Open your browser and navigate to:
 ```json
 {
   "email": "admin@gmail.com",
-  "password": "#Rtz45Sky1"
+  "password": "Admin12345."
 }
 ```
 
@@ -776,7 +776,7 @@ dotnet ef database update --project SkillForge.Identity
 ### 🌱 Database Seeding
 
 The application automatically seeds:
-- **Default Admin User**: `admin@gmail.com` / `#Rtz45Sky1`
+- **Default Admin User**: `admin@gmail.com` / `Admin12345.`
 - **Roles**: Admin, User
 - **Initial Configuration**: Default settings
 
