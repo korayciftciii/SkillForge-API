@@ -348,7 +348,7 @@ cd skillforge
 1. **Install PostgreSQL** and create a database:
 ```sql
 CREATE DATABASE skillforge_db;
-CREATE USER skillforge_user WITH PASSWORD '#Rtz45Sky';
+CREATE USER skillforge_user WITH PASSWORD 'Admin12345.';
 GRANT ALL PRIVILEGES ON DATABASE skillforge_db TO skillforge_user;
 ```
 
@@ -356,8 +356,8 @@ GRANT ALL PRIVILEGES ON DATABASE skillforge_db TO skillforge_user;
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=#Rtz45Sky",
-    "ProjectDb": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=#Rtz45Sky"
+    "DefaultConnection": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=Admin12345.",
+    "ProjectDb": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=Admin12345."
   }
 }
 ```
@@ -449,8 +449,8 @@ dotnet run
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=#Rtz45Sky",
-    "ProjectDb": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=#Rtz45Sky"
+    "DefaultConnection": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=Admin12345.",
+    "ProjectDb": "Host=localhost;Port=5432;Database=skillforge_db;Username=skillforge_user;Password=Admin12345."
   },
   "Jwt": {
     "Key": "THIS_IS_A_SUPER_SECRET_KEY_123456",
@@ -588,7 +588,7 @@ All list endpoints support:
 ```json
 {
   "email": "admin@gmail.com",
-  "password": "#Rtz45Sky1"
+  "password": "Admin12345."
 }
 ```
 
