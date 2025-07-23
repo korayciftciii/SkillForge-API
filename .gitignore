@@ -98,6 +98,9 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
+# Docker klasörü ignore edilir
+docker/
+
 # Chutzpah Test files
 _Chutzpah*
 
@@ -361,4 +364,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-docker/.env
